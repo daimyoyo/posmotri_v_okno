@@ -53,6 +53,7 @@ ol {
 .content__card-link {
   display: block;
   text-decoration: none;
+  outline-offset: -2px;
 }
 
 .content__card-link:active {
@@ -196,7 +197,7 @@ ol {
 
 .button:focus-visible {
   outline: 1px double #fff;
-  outline-offset: 1px;
+  outline-offset: -3px;
 }
 
 .more-button {
@@ -220,10 +221,11 @@ ol {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  height: 27px;
   min-width: 225px;
   appearance: none;
-  border-top: 0.2px solid #fff;
-  border-bottom: 0.2px solid #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .search-form__textfield:active {
@@ -231,9 +233,7 @@ ol {
 }
 
 .search-form__textfield:focus {
-  outline-offset: 3px;
   outline: none;
-  border: 0px solid transparent;
 }
 
 .search-form__checkbox-list {
@@ -261,6 +261,7 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -334,5 +335,6 @@ input[type=checkbox]:disabled + span {
 
 input[type=checkbox]:checked + span {
   background-color: #FFF;
-  border: 3px double #1b1919;
+  outline: 3px double #1b1919;
+  outline-offset: -2px;
 }
